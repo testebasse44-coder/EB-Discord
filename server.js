@@ -127,4 +127,6 @@ app.listen(PORT, () => {
     console.log(`Servidor web na porta ${PORT}`);
 });
 
+console.log("DISCORD_TOKEN configurado:", !!process.env.DISCORD_TOKEN);
+
 client.login(process.env.DISCORD_TOKEN);
